@@ -1,0 +1,13 @@
+main .perfil div.container.botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@media (max-width: 767px) {
+
+    main .perfil div.container.botones {
+        display: none;
+    } 
+}

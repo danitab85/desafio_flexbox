@@ -1,0 +1,90 @@
+.container-fluid {
+    background-image: url("../../assets/images/image-banner.png");
+    height: 180px;
+        
+}
+
+div.container-fluid.banner {
+    background-position: center;
+}
+
+main .perfil div.container {
+    display: flex;
+    height: 70px;
+    padding-top: 10px;
+}
+
+main .perfil div.container.foto-perfil {
+    width: 100px;
+}
+
+main .foto-perfil img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+main .perfil div.container.nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+}
+
+main .perfil div.container.nombre div.item h4{
+    font-weight: 600;
+}
+
+main .perfil div.container.nombre div.item span{
+    color: $grey;
+}
+
+main .contenido div.container h3 {
+    display: none;
+}
+
+main div.card {
+    border: none;
+}
+
+main div.card-body {
+    padding-left: 0px;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .container-fluid {
+        background-position: center;
+        background-size: cover;
+        height: 80px;
+    }
+
+    main .perfil div.container.foto-perfil {
+       margin-left: 60px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    section.contenido {
+        margin-top: 60px;
+    }
+    section.contenido div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .contenido div.container h3 {
+        display: block;
+        text-align: center;
+    }
+
+    section.contenido div.container div.row {
+        display:flex;
+        flex-direction: column;
+    }
+}
