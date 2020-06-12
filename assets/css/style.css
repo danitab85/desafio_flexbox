@@ -7,14 +7,25 @@ nav.navbar.navbar-light.bg-dark {
   background-color: white !important;
 }
 
-div.container.nav__logo {
+.nav__logo {
   display: flex;
+  margin-left: 5vw;
 }
 
-div.container a.navbar-brand {
+a.navbar-brand {
   color: black;
   font-size: 35px;
   font-weight: 600;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+div.item.nav__item {
+  padding-right: 0px;
+}
+
+div.item.item__art {
+  flex-grow: 1;
 }
 
 span {
@@ -22,7 +33,7 @@ span {
   color: #727070;
 }
 
-div.container.iconos {
+.iconos {
   height: 70px;
   display: flex;
   align-items: center;
@@ -38,19 +49,17 @@ div.item {
 
 @media (max-width: 767px) {
   header {
-    width: 429px;
+    width: 100%;
   }
 
-  div.container.iconos {
+  .iconos {
     display: none;
   }
 }
-.container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+.banner {
   background-image: url("../../assets/images/image-banner.png");
   height: 180px;
-}
-
-div.container-fluid.banner, div.banner.container-xl, div.banner.container-lg, div.banner.container-md, div.banner.container-sm {
+  width: 100%;
   background-position: center;
 }
 
@@ -60,23 +69,25 @@ main .perfil div.container {
   padding-top: 10px;
 }
 
-main .perfil div.container.foto-perfil {
+.container .foto-perfil {
   width: 100px;
 }
 
-main .foto-perfil img {
+.container .foto-perfil img {
   border-radius: 50%;
-  height: 50px;
+  width: calc(100% - 15px);
+  display: block;
 }
 
-main .perfil div.container.nombre {
+.container .nombre {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  flex-grow: 1;
 }
 
-main .perfil div.container.nombre div.item h4 {
+.container .item h4 {
   font-weight: 600;
 }
 
@@ -97,7 +108,7 @@ main div.card-body {
 }
 
 @media (max-width: 767px) {
-  .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+  .banner {
     background-position: center;
     background-size: cover;
     height: 80px;
@@ -130,14 +141,14 @@ main div.card-body {
     flex-direction: column;
   }
 }
-main .perfil div.container.botones {
+.container .botones {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 @media (max-width: 767px) {
-  main .perfil div.container.botones {
+  .container .botones {
     display: none;
   }
 }

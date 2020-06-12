@@ -1,4 +1,4 @@
-main .perfil div.container.botones {
+.container .botones {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -7,7 +7,7 @@ main .perfil div.container.botones {
 
 @media (max-width: 767px) {
 
-    main .perfil div.container.botones {
+    .container .botones {
         display: none;
     } 
 }
