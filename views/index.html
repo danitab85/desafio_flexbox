@@ -15,45 +15,45 @@
 
 <body>
     <header>
-        <ul class="nav justify-content-end">
+        <div class="nav__logo">
+            <div class="item nav__item">
+                <a class="navbar-brand" href="#">GIGEO</a>
 
-            <li>
-                <div class="container nav__logo">
-                    <div class="item">
-                        <a class="navbar-brand" href="#">GIGEO</a>
+            </div>
+            <div class="item item__art">
+                <span id="nav_art">ART</span>
+            </div>
 
+            <ul class="nav justify-content-end">
+
+
+                <li>
+                    <div class=" iconos">
+                        <div class="item"><i class="fas fa-search icono"></i></div>
+                        <div class="item"><i class="fas fa-video icono"></i></div>
+                        <div class="item"><i class="fas fa-plus icono"></i></div>
+                        <div class="item"><i class="far fa-bell icono"></i></div>
                     </div>
-                    <div class="item">
-                        <span id="nav_art">ART</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="container iconos">
-                    <div class="item"><i class="fas fa-search icono"></i></div>
-                    <div class="item"><i class="fas fa-video icono"></i></div>
-                    <div class="item"><i class="fas fa-plus icono"></i></div>
-                    <div class="item"><i class="far fa-bell icono"></i></div>
-                </div>
-            </li>
+                </li>
 
-            <li class="nav-item">
-                <nav class="navbar navbar-light bg-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </li>
+                <li class="nav-item">
+                    <nav class="navbar navbar-light bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </li>
 
-        </ul>
+            </ul>
+        </div>
 
     </header>
 
     <main>
         <section id="image-banner">
-            <div class="container-fluid banner">
+            <div class="banner">
 
             </div>
 
@@ -62,16 +62,16 @@
 
         <section class="perfil">
             <div class="container">
-                <div class="container foto-perfil">
-                    <img src="../assets/images/profile-image.png" alt="">
+                <div class="foto-perfil">
+                    <img class="rounded-circle" src="../assets/images/profile-image.png" alt="">
                 </div>
-                <div class="container nombre">
+                <div class="nombre">
                     <div class="item">
                         <h4>Yuki Mukami</h4>
                     </div>
                     <div class="item"><span>30.000 seguidores</span></div>
                 </div>
-                <div class="container botones">
+                <div class="botones">
                     <div class="item"><button type="button" class="btn btn-info">Mensaje</button></div>
                     <div class="item"><button type="button" class="btn btn-danger">Seguir</button></div>
                 </div>
